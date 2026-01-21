@@ -18,7 +18,7 @@
   left: 0;
   width: 60px;
   height: 4px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
   border-radius: 2px;
 }
 
@@ -46,10 +46,10 @@
 }
 
 .link-card:hover {
-  border-color: #667eea;
+  border-color: #3b82f6;
   transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(102, 126, 234, 0.2);
-  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+  box-shadow: 0 12px 24px rgba(59, 130, 246, 0.2);
+  background: linear-gradient(135deg, #3b82f615 0%, #06b6d415 100%);
 }
 
 .link-card .icon {

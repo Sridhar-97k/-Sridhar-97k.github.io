@@ -1,14 +1,26 @@
 .header {
-  text-align: center;
   margin-bottom: 4rem;
   padding: 2rem 0;
   animation: fadeInDown 0.8s ease-out;
 }
 
+.header-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10rem;
+  max-width: 100%;
+}
+
+.header-text {
+  flex: 0 1 auto;
+  text-align: left;
+}
+
 .name {
   font-size: 3.5rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -20,6 +32,30 @@
   font-size: 1.25rem;
   color: #6b7280;
   font-weight: 400;
+}
+
+.header-photo {
+  flex-shrink: 0;
+}
+
+.profile-image {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid transparent;
+  background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%) border-box;
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.2);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 32px rgba(59, 130, 246, 0.3);
 }
 
 @keyframes fadeInDown {
@@ -34,11 +70,26 @@
 }
 
 @media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .header-text {
+    text-align: center;
+  }
+
   .name {
     font-size: 2.5rem;
   }
-  
+
   .tagline {
     font-size: 1.1rem;
+  }
+
+  .profile-image {
+    width: 180px;
+    height: 180px;
   }
 }
