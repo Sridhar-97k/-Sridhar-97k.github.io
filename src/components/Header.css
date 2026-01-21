@@ -8,7 +8,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 10rem;
+  gap: 8rem;
   max-width: 100%;
 }
 
@@ -39,8 +39,8 @@
 }
 
 .profile-image {
-  width: 220px;
-  height: 220px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid transparent;
